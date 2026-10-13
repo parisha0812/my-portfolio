@@ -105,6 +105,8 @@ ul {
 }
 
 /* ---------- Hero ---------- */
+
+
 .hero {
   min-height: 590px;
   display: grid;
@@ -114,6 +116,18 @@ ul {
   padding-top: 65px;
   padding-bottom: 65px;
 }
+
+.hero-content {
+  grid-column: 1;
+  min-width: 0;
+}
+
+.hero-card {
+  grid-column: 2;
+  width: 100%;
+  min-width: 0;
+}
+
 
 .eyebrow {
   color: var(--olive);
@@ -695,4 +709,21 @@ ul {
 
 .social-link:hover {
   color: #7D8665;
+}
+
+
+/* Dono project cards ka same design */
+.project-card {
+  background-color: #ffffff;
+  border: 2px solid #6c63ff;
+  border-radius: 18px;
+}
+
+/* Dono project numbers ka same background */
+.visual-one,
+.visual-two,
+.visual-three,
+.visual-four {
+  background-color: #e5dac7;
+  color: #222222;
 }
