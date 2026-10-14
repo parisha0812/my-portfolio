@@ -824,3 +824,51 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+/* Mobile Hero Font Fix */
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 28px;
+  }
+
+  .hero-content {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(30px, 8vw, 38px);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-content h1 span {
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .hero-content h2 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
