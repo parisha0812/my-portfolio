@@ -780,73 +780,47 @@ ul {
 }
 
 
-/* Final Mobile Layout Fix */
-@media screen and (max-width: 640px) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 28px;
-    min-height: auto;
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
 
-  .hero-content {
-    grid-column: 1;
-    width: 100%;
-    min-width: 0;
-  }
-
-  .hero-card {
-    grid-column: 1;
-    width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
-    padding: 25px 18px;
-  }
-
-  .hero h1 {
-    font-size: clamp(28px, 8vw, 40px);
-    line-height: 1.2;
-    letter-spacing: -1px;
-    overflow-wrap: break-word;
-  }
-
-  .hero h2 {
-    font-size: 22px;
-    line-height: 1.4;
-  }
-
-  .hero-description {
-    max-width: 100%;
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  .hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .hero-buttons .btn {
-    font-size: 13px;
-    padding: 11px 12px;
-  }
-
-  .profile-placeholder {
-    width: 160px;
-    height: 160px;
-  }
-
-  .hero-card h3 {
-    font-size: 22px;
-    line-height: 1.4;
-  }
-
-  .hero-card > p:last-child {
-    font-size: 14px;
-  }
+/* Storyboard Project */
+.visual-three {
+  background: #e5dac5;
+  color: #292a28;
 }
 
 
+/* ---------- Featured Projects: Equal Cards ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.projects-grid .project-card {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-grid .project-visual {
+  height: 170px;
+  min-height: 170px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.projects-grid .project-info {
+  flex: 1;
+  padding: 24px;
+}
+
+/* Mobile layout */
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
